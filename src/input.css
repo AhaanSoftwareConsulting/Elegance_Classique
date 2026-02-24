@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+.font-playball {
+  font-family: "Playball", cursive;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.active-tab {
+  background-color: #0f6b5b;
+  color: white;
+}
+
+
+.hero-text {
+  display: block;
+}
+
+.reveal-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Base visible text */
+.reveal-base {
+  color: rgba(26, 24, 23, 0.25); /* light gray */
+  display: inline-block;
+}
+
+/* Top animated fill text */
+.reveal-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1A1817; /* final black */
+  clip-path: inset(0 100% 0 0);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+
